@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+
+import Container from "./components/Container/Container";
+import { GlobalStyle } from './theme/theme';
 import './App.css'; // You can create a CSS file for styling
 
 const App = () => {
@@ -43,7 +46,7 @@ const App = () => {
   const strength = calculatePasswordStrength(password);
 
   return (
-    <div>
+    <Container>
       <label htmlFor="password">Password:</label>
       <input
         type="password"
@@ -60,7 +63,8 @@ const App = () => {
           style={{ backgroundColor: getPasswordColor(strength, index) }}
         ></div>
       ))}
-    </div>
+       <GlobalStyle />
+    </Container>
   );
 };
 

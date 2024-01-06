@@ -16,7 +16,7 @@ const theme = {
     shadow: '#a68dae47',
     hover: '#6243ff',
 
-    headerBg: '#fefcff',
+    bg: '#E7EBF2',
   },
   priorityColors: {
     High: '#FF0000',
@@ -50,24 +50,6 @@ const theme = {
     caption: {
       fontSize: '14px',
       fontWeight: '400',
-    },
-  },
-  button: {
-    default: {
-      color: 'white',
-      backgroundColor: '#7B61FF',
-    },
-    hover: {
-      backgroundColor: '#6243FF',
-    },
-    disabled: {
-      backgroundColor: '#ACA7C3',
-      cursor: 'not-allowed',
-    },
-    back: {
-      fontSize: '14px',
-      fontWeight: '500',
-      color: '#7B61FF',
     },
   },
 };

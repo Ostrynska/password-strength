@@ -94,6 +94,7 @@ button, input {
       font-family: ${theme.fontFamily.primary};
       font-size: ${theme.typography.body.fontSize};
       font-weight: ${theme.typography.body.fontWeight};
+      background-color: ${theme.colors.bg};
     },
     p {
       font-size: ${theme.typography.caption.fontSize};

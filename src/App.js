@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 import Container from "./components/Container/Container";
 import { GlobalStyle } from './theme/theme';
 import './App.css'; 
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+
 
 const App = () => {
   const [password, setPassword] = useState('');
@@ -49,24 +52,28 @@ const App = () => {
     <Container>
       <div style={{display: 'flex'}}>
         <div>Image</div>
-        <div>
-          <label htmlFor="password">Password:</label>
-                <input
-                  type="password"
-                  id="password"
+         <Box
+      component="form"
+      sx={{
+        '& > :not(style)': { m: 1, width: '25ch' },
+      }}
+      noValidate
+      autoComplete="off"
+    >
+          <TextField fullWidth label="Password"
+                  id="fullWidth"
                   name="password"
                   value={password}
-                  onChange={updatePassword}
-                />
+                  onChange={updatePassword}/>
 
-                {[0, 1, 2].map((index) => (
+                {/* {[0, 1, 2].map((index) => (
                   <div
                     key={index}
                     className="strength-section"
                     style={{ backgroundColor: getPasswordColor(strength, index) }}
                   ></div>
-                ))}
-        </div>
+                ))} */}
+         </Box>
       </div>
       
        <GlobalStyle />

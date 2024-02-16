@@ -99,6 +99,10 @@ const App = () => {
 
     const strength = calculatePasswordStrength(password);
 
+    let str ="Hello JavaScript!";
+str.replace("JavaScript", "ECMAScript");
+console.log(str);
+
     return (
         <Container>
             <div style={{display: 'flex'}}>
